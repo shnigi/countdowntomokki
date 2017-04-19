@@ -52,6 +52,13 @@ export default StyleSheet.create({
         "flexFlow": "row wrap",
         "justifyContent": "space-around"
     },
+    "text": {
+        "fontSize": 10,
+        "marginTop": 5,
+        "marginRight": 5,
+        "marginBottom": 5,
+        "marginLeft": 5
+    },
     "child": {
         "width": 100,
         "height": 100,

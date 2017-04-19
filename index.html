@@ -19,10 +19,22 @@
       <h1 class="heading">Ei vielä. Enää jäljellä</h1>
       <div class="clock"></div>
       <div class="clock-container">
-        <div class="child days"></div>
-        <div class="child hours"></div>
-        <div class="child minutes"></div>
-        <div class="child seconds"></div>
+        <div class="child days">
+          <span class="number"></span>
+          <span class="text">Päivää</span>
+        </div>
+        <div class="child hours">
+          <span class="number"></span>
+          <span class="text">Tuntia</span>
+        </div>
+        <div class="child minutes">
+          <span class="number"></span>
+          <span class="text">Minuuttia</span>
+        </div>
+        <div class="child seconds">
+          <span class="number"></span>
+          <span class="text">Sekuntia</span>
+        </div>
       </div>
       <button class="joko">Joko nyt?</button>
     </div>
@@ -37,11 +49,10 @@
       $('.joko').hide();
     }
 
-    $('.days').text(event.strftime('%-D Päivää'));
-    $('.hours').text(event.strftime('%-H Tuntia'));
-    $('.minutes').text(event.strftime('%-M Minuuttia'));
-    $('.seconds').text(event.strftime('%-S Sekunttia'));
-    // $(this).text(event.strftime('%-D päivää %-H tuntia %-M minuuttia %-S sekunttia'));
+    $('.days .number').text(event.strftime('%-D'));
+    $('.hours .number').text(event.strftime('%-H'));
+    $('.minutes .number').text(event.strftime('%-M'));
+    $('.seconds .number').text(event.strftime('%-S'));
   });
 
   $(".joko").click(() => window.location.reload());
