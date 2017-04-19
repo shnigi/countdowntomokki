@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Joko mökki?</title>
+  <meta charset="utf-8" />
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="jquery.countdown.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="Aligner">
+    <div class="Aligner-item">
+      <div class="status">
+        <h1>NYT MÖKKI</h1>
+        <img src="https://cdn.meme.am/instances/57515478.jpg" alt="kaljaa">
+      </div>
+      <h1 class="heading">Ei vielä. Enää jäljellä</h1>
+      <div class="clock"></div>
+      <div class="clock-container">
+        <div class="child days"></div>
+        <div class="child hours"></div>
+        <div class="child minutes"></div>
+        <div class="child seconds"></div>
+      </div>
+      <button class="joko">Joko nyt?</button>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $(".clock").countdown("2017/07/07", function(event) {
+    if (event.elapsed) {
+      $('.heading').hide();
+      $('.clock-container').hide();
+      $('.status').show();
+      $('.joko').hide();
+    }
+
+    $('.days').text(event.strftime('%-D Päivää'));
+    $('.hours').text(event.strftime('%-H Tuntia'));
+    $('.minutes').text(event.strftime('%-M Minuuttia'));
+    $('.seconds').text(event.strftime('%-S Sekunttia'));
+    // $(this).text(event.strftime('%-D päivää %-H tuntia %-M minuuttia %-S sekunttia'));
+  });
+
+  $(".joko").click(() => window.location.reload());
+
+  const rand = Math.floor(0xfffff * Math.random());
+  const color = '#' + rand;
+  $('body').css('background-color', color );
+</script>
+</body>
+</html>

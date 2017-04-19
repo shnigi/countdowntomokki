@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(83, 171, 158);
+  color:white;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.status {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.clock {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.joko {
+  border-radius: 0px;
+  background-color: rgb(36, 157, 201);
+  color: white;
+  border:none;
+  padding:30 60 30 60px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.joko:hover {
+  background-color: rgb(0, 75, 130);
+  cursor: pointer;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.clock-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 20px;
+  background: #4c4c4c; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #4c4c4c 0%, #131313 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4c4c4c 0%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #4c4c4c 0%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-size: 30px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
