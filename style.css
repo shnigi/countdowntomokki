@@ -40,10 +40,6 @@ h1 {
   cursor: pointer;
 }
 
-.Aligner-item {
-  max-width: 50%;
-}
-
 .clock-container {
   display: flex;
   flex-flow: row wrap;
