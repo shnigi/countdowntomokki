@@ -5,6 +5,10 @@ body {
   color:white;
 }
 
+.Aligner-item {
+  margin-top: 60px;
+}
+
 .Aligner {
   display: flex;
   align-items: center;
